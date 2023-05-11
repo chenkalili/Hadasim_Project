@@ -21,7 +21,7 @@ const createTables = () => {
     const createVaccinationdetailsTable = `
     CREATE TABLE IF NOT EXISTS vaccination_details (
       id INT NOT NULL,
-      vaccineDate DATE,
+      vaccinDate DATE,
       manufacturer VARCHAR(255),
       FOREIGN KEY(id) REFERENCES personal_details(id)
     )

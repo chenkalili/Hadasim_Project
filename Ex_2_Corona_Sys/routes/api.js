@@ -3,17 +3,22 @@ var router = express.Router();
 const controller = require('../controllers/api');
 
 
-router.post('/addPersonDetails', controller.addPersonDetails)
+router.post('/addPerson', controller.addPersonDetails)
 
-router.post('/addVaccinationDetails', controller.addVaccinationDetails)
+router.post('/addVaccin', controller.addVaccinationDetails)
 
-router.post('/addCoronaResultsDates', controller.addCoronaResultsDates)
+router.post('/addCoronaResults', controller.addCoronaResultsDates)
 
-router.get('/getPersonDetails', controller.getPersonDetails);
+router.get('/getPerson', controller.getPersonDetails);
 
-router.get('/getVaccinationDetails', controller.getVaccinationDetails)
+router.get('/getVaccin', controller.getVaccinationDetails)
 
-router.get('/getCoronaResultsDates', controller.getCoronaResultsDates)
+router.get('/getCoronaResult', controller.getCoronaResultsDates)
 
-router.get('/getDataById', controller.getDataById)
+router.get('/getData', controller.getDataById)
+
+router.get('/getPatientsByDay',controller.getPatientsByDay);
+
+router.get('/getUnvaccinated',controller.getUnvaccinated);
+
 module.exports = router;
