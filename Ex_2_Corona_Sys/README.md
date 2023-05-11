@@ -60,3 +60,5 @@ GET: http://localhost:3000/api/getData/?
 Bonus:
 * GET: http://localhost:3000/api/getPatientsByDay/?
 * GET: http://localhost:3000/api/getUnvaccinated/?
+
+To examine the outcomes, I retrieved certain results in JSON format and observed the responses in the body section of Postman. As for the POST requests, the server extracted the API and generated a new row within the SQL table. To assess the results, I utilized the phpAdmin program, which displays the tables accordingly.
